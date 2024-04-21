@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { StudentsModule } from './pages/students/students.module';
 import { CoursesModule } from './pages/courses/courses.module';
+import { SharedModule } from './pages/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CoursesModule } from './pages/courses/courses.module';
     MatIconModule,
     MatButtonModule,
     StudentsModule,
-    CoursesModule
+    CoursesModule,
+    SharedModule
   ],
   exports: [
     DashboardComponent

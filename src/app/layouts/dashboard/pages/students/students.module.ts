@@ -9,11 +9,16 @@ import { StudentDialogComponent } from './components/student-dialog/student-dial
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { CustomPipesPipe } from '../shared/pipes/custom-pipes.pipe';
+
 
 @NgModule({
   declarations: [
     StudentsComponent,
-    StudentDialogComponent
+    StudentDialogComponent,
+    CustomPipesPipe,
+
   ],
   imports: [
     CommonModule,
@@ -23,8 +28,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule,
   ],
-  exports: [StudentsComponent]
+  exports: [StudentsComponent],
 })
 export class StudentsModule { }

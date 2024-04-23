@@ -16,21 +16,6 @@ export class StudentsComponent implements OnInit {
   students: IStudent[] = []
   constructor(private matDialog: MatDialog, private studentsService: StudentsService) { }
   ngOnInit(): void {
-    // const getStudents$ = new Observable((observer) => {
-    //   const students = this.studentsService.getStudentsList().subscribe()
-    //   console.log("students", students)
-    //   observer.next(students)
-    // })
-    // const getStudentsSubscription = getStudents$.subscribe({
-    //   next: (students) => {
-
-    //   },
-    //   error: () => {
-    //     alert('Error al realizar la petición')
-    //   },
-    //   complete: () => { }
-    // })
-
     this.studentsService.getStudentsList().subscribe({
       next: (students) => {
         this.students = students
